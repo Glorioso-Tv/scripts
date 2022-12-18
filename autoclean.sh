@@ -17,7 +17,7 @@ if [[ `id -u` -ne 0 ]]; then
 		zenity --info --text="Você precisa ter poderes administrativos (root)
 
     Execute pelo Terminal:
-    sudo ./autoclean-linux.sh" && echo $?
+    sudo ./autoclean.sh" && echo $?
 		if [ $? -eq 1 ]; then
         exit 1
     fi
@@ -186,3 +186,4 @@ read -n1 -p "Para continuar escolha s(sim) ou n(não)  " escolha
 			exit
 			;;
 	esac
+
